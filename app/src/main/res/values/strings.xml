@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AulaAndroid</string>
+    <string name="ok">OK</string>
+    <string name="soma">+</string>
+    <string name="sub">-</string>
+    <string name="mult">x</string>
+    <string name="div">/</string>
+
+</resources>
