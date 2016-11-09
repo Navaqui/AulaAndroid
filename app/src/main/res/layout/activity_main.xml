@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="fabricadeprogramador.com.br.aulaandroid.MainActivity">
+    tools:context=".CalculadoraActivity">
 
     <EditText
         android:layout_width="match_parent"
@@ -47,11 +47,5 @@
         android:layout_below="@id/ed2"
         android:layout_toRightOf="@id/bt_mult"
         android:text="@string/div" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bt_OK"
-        android:layout_below="@id/bt_mult"
-        android:text="@string/ok" />
 
 </RelativeLayout>
