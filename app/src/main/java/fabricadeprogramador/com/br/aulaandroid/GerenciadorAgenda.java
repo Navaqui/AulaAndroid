@@ -8,13 +8,13 @@ import java.util.List;
  */
 
 public class GerenciadorAgenda {
-    private static List<String> nomes = new ArrayList<>();
+    private static List<Pessoa> pessoasList = new ArrayList<>();
 
-    public static List<String> getNomes() {
-        return nomes;
+    public static List<Pessoa> getNomes() {
+        return pessoasList;
     }
 
-    public static void adicionar(String nome) {
-        nomes.add(nome);
+    public static void adicionar(Pessoa pessoa) {
+        pessoasList.add(pessoa);
     }
 }

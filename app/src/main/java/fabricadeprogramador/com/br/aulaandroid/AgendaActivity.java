@@ -18,6 +18,12 @@ public class AgendaActivity extends AppCompatActivity {
     @Bind(R.id.ed_agenda_nome)
     EditText edNome;
 
+    @Bind(R.id.ed_agenda_telefone)
+    EditText edTelefone;
+
+    @Bind(R.id.ed_agenda_email)
+    EditText edEmail;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +34,7 @@ public class AgendaActivity extends AppCompatActivity {
     @OnClick(R.id.bt_salvar)
     public void salvar() {
         Intent irLista = new Intent(AgendaActivity.this,ListaAgendaActivity.class);
-        irLista.putExtra("nome", edNome.getText().toString());
+        irLista.putExtra("pessoa", new Pessoa(edNome.getText().toString(), edTelefone.getText().toString(), edEmail.getText().toString(),0));
         startActivity(irLista);
     }
 

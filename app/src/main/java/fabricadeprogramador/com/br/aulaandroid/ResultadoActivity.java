@@ -32,8 +32,9 @@ public class ResultadoActivity extends Activity {
 
         resultado.setText(valor.toString());
     }
+
     @OnClick(R.id.bt_fechar)
-    public void fechar(){
+    public void fechar() {
         finish();
     }
 }
