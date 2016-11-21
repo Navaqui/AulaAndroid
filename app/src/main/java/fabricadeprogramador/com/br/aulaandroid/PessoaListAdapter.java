@@ -41,10 +41,8 @@ public class PessoaListAdapter extends ArrayAdapter<Pessoa> {
         Pessoa pessoa = getItem(position);
         if(pessoa != null){
             holder.itemTv.setText(pessoa.getNome());
-            holder.itemImg.setImageResource(pessoa.getImagem());
+            //holder.itemImg.setImageResource(pessoa.getImagem());
         }
-
-
 
         return convertView;
     }
@@ -55,5 +53,6 @@ public class PessoaListAdapter extends ArrayAdapter<Pessoa> {
 
         @Bind(R.id.item_tv)
         TextView itemTv;
+
     }
 }
